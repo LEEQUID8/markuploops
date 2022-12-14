@@ -1,0 +1,213 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --background: #aac0d6;
+  --main: white;
+  --header: #618bd4;
+  --text: #00071c;
+  --send-box: #e4ebf6;
+  --receive-box: #f1eff1;
+  --comment: #f1eff1;
+  --send:  #5d7ec0;
+--time: #adb1b7;
+--blocked: #ffb9bb;
+}
+body{
+  background-color: #aac0d6;
+}
+.time{
+  padding: 1rem;
+}
+.line{
+  margin-top: 0.5rem;
+  height:2px;
+  width: 9rem;
+ background-color:var(--time);
+}
+.duration{
+  color: var(--time)
+}
+.dot{
+  margin-top: 1.2rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  display: flex;
+  background-color:white;
+  margin-right: 1.5rem;
+}
+.container {
+  height: 75vh;
+  width: 30vw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 7rem;
+  margin-left:auto;
+  margin-right: auto;
+}
+.time{
+  margin:0.2rem 0;
+  display: flex;
+  column-gap: 10px;
+}
+.all{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.ruler{
+  margin-top: 1.5rem;
+}
+.chat-box{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--header);
+  padding: 0.5rem 0.8rem;
+  color:var(--main);
+  width:100%;
+}
+.dot{
+  color:#aac0d6;
+}
+.cancel{
+  width:1.5rem;
+  height:1.5rem;
+  margin-top: 0.7rem;
+  margin-left: 9rem;
+  color:white;
+}
+.duration{
+  text-align: center;
+}
+.clock{
+  margin-top: 1rem;
+}
+.alarm{
+margin-left: 24.5rem;
+}
+.user{
+  background-color:   var(--blocked);
+  margin-left: 10rem;
+  margin-top:1.5rem;
+  padding: 0.1rem 0.4rem;
+  width:16rem;
+}
+.user p{
+
+}
+input{
+outline:none;
+border:none;
+}
+button{
+  margin-left:12.8rem;
+  color:var(--send);
+  font-style:sans-serif;
+  border:none;
+  background-color: transparent;
+}
+form{
+  margin-top:1rem;
+}
+.talk-bubble {
+  margin: 0.4rem 0.4rem 0.8rem 0rem;
+  position: relative;
+	width: 16.5rem;
+	height: 4rem;
+	background-color: var(--send-box);
+  color: var(--text);
+  border-radius: 0.2rem;
+  font-size: 13px;
+  padding: 0.01rem 0.5rem;
+  font-weight: 500;
+}
+
+
+.talk-bubble-1 {
+	margin: 0.4rem 0.4rem 0.8rem 10rem;
+  position: relative;
+	width: 16.5rem;
+	height: 4rem;
+	background-color: var(--receive-box);
+  color: var(--text);
+  border-radius: 0.2rem;
+  font-size: 13px;
+  padding: 0.01rem 0.5rem;
+  font-weight: 500;
+}
+
+.talk-bubble-2 {
+  margin: 0.4rem 0.4rem 0.4rem 0rem;
+  position: relative;
+	width: 6rem;
+	height: 4rem;
+	background-color: var(--send-box);
+  color: var(--text);
+  border-radius: 0.2rem;
+  font-size: 13px;
+  padding: 0.01rem 0.5rem;
+  font-weight: 500;
+}
+
+
+
+/* Right triangle placed top left flush. */
+.tri-right.border.left-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -40px;
+	right: auto;
+  top: -2px;
+	bottom: auto;
+	border: 2px solid;
+	border-color: var(--send-box) transparent transparent transparent;
+}
+.tri-right.left-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -6px;
+	right: auto;
+  top: 0px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: var(--send-box) transparent transparent transparent;
+}
+
+
+/* Right triangle placed top right flush. */
+.tri-right.border.right-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -40px;
+  top: -8px;
+	bottom: auto;
+	border: 8px solid;
+	border-color:  var(--receive-box) transparent transparent transparent;
+}
+.tri-right.right-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -8px;
+  top: 0px;
+	bottom: auto;
+	border: 8px solid;
+	border-color: var(--receive-box) transparent transparent transparent;
+}

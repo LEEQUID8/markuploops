@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Roboto, sans-serif;
+}
+.dots{
+    align-items: center;
+    display:flex;
+    justify-content: center;
+}
+.circle-1{
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: grey; 
+    border-radius: 100%;
+    margin-right: 2%;
+    margin-top:5%;
+}
+.circle-2{
+    width: 0.5rem;
+    height: 0.5rem;
+   background-color: rgb(167, 151, 151);
+   border-radius: 100%;
+   margin-top: 5%;
+}
+.circle-3{
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(230, 219, 219);
+    margin-left:2%;
+    border-radius: 100%;
+    margin-top: 5%;
+}
+#container{
+    width:25%;
+    background-color: white;
+    margin:15% auto 15% auto;
+    border-radius:2%;
+}
+.header{
+    text-align: center;
+    padding:4% 6%;
+}
+.visa, .master, .maestro{ 
+    display:flex;
+}
+.image{
+    width:25%;    
+}
+.identity, .bold{
+font-weight: 700;
+padding:5% 6% 5% 6%;
+font-size:14px;
+}
+.identity{
+    color:grey;
+}
+.master .bold{
+    flex:2;
+}
+.check-image{
+padding: 10px;
+}
+.btn-container {
+    display: flex;
+    width: 100%;
+    background:blue;
+    }
+    .submit-btn {
+    border: none;
+    margin: 0 auto;
+    padding:20px;
+    color: white;
+    background-color: blue;
+    }
+    .arrow {
+    position: absolute;
+    top: 1;
+    width:15px;
+    }
+     .maestro:hover{
+        background-color:  whitesmoke;
+    }
+    .visa:hover{
+        background-color: whitesmoke;
+    }
+    .master:hover{
+        background-color:  whitesmoke;
+    }
+.btn-container:hover{
+        background-color:blue;
+}

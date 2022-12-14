@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background: #9c7ae7;
+    color: white;
+}
+
+#main {
+    margin: 10% auto;
+    width: 25%;
+    box-shadow: -8px 12px 16px -3px #866ed0;
+    box-shadow: 0 0 0.5em 0.2em rgb(70, 45, 70);
+}
+
+
+#photos {
+    background: linear-gradient(45deg, #ad71d2 10%, #896bc9 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem 0.5rem 0.7rem;
+    border-radius: 5px 5px 0 0;
+}
+
+.photos-img, .files-img {
+    display: flex;
+    padding: 1.5rem 1rem 1rem 1rem;
+}
+
+.inner {
+    position: absolute;
+    width: 0.1%;
+    height: 6%;
+    top: 20%;
+    margin-left: 1.15%;
+    background: white;
+}
+
+.vac-a {
+    position: absolute;
+    width: 0.1%;
+    height: 4.8%;
+    top: 33%;
+    margin-left: 0.3%;
+    background: #a69eba;
+}
+
+.vac-b {
+    position: absolute;
+    width: 0.1%;
+    height: 2%;
+    top: 40%;
+    margin-left: 0.3%;
+    background: #a69eba;
+}
+
+.vac-c {
+    position: absolute;
+    width: 0.1%;
+    height: 2%;
+    top: 44.6%;
+    margin-left: 0.3%;
+    background: #a69eba;
+}
+
+.vac-d {
+    position: absolute;
+    width: 0.1%;
+    height: 3.2%;
+    top: 49%;
+    margin-left: 0.3%;
+    background:  #a69eba;
+}
+
+.file-top {
+    position: absolute;
+    width: 0.1%;
+    height: 5%;
+    top: 52%;
+    margin-left: 1.15%;
+    background: white;
+}
+
+
+.file-bottom {
+    position: absolute;
+    width: 0.1%;
+    height: 3.4%;
+    top: 60%;
+    margin-left: 1.15%;
+    background: white;
+}
+
+.photo-img, .file-img {
+    background-color: white;
+    padding: 0.3rem;
+    border-radius: 50%;
+   }
+
+   .photo-text, .file-text {
+padding-top: 0.5rem;
+margin-left: 1rem;
+
+/* border-top: 2px solid rgb(177, 173, 173); */
+   }
+
+   #activities {
+    background: #564875;
+    padding: 1rem 1rem 1.5rem 1rem;
+   }
+
+   .vacation {
+    padding-left: 1.5rem;
+   }
+
+  .vacation p {
+    margin-top: 1rem;
+   }
+
+   .act-a, .act-b, .act-c {
+    margin-left: 1.5rem;
+    color: #dbd8e1;
+   }
+
+   .act-a:hover, .act-b:hover, .act-c:hover {
+    cursor: pointer;
+    color: white;
+   }
+
+   #files {
+    background: linear-gradient(90deg, #9e6ece 3%, #8b6bc7 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0.7rem;
+    border-radius: 0 0 5px 5px;
+}

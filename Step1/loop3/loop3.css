@@ -1,0 +1,58 @@
+body{
+    background-color:rgb(51, 153, 122);
+}
+#container{
+    background-image: url(./images/bicycle.png);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 10rem;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    overflow: hidden;
+    position: absolute;
+    top: 25%;
+    bottom:25%;
+    left:50%;
+    transform:translate(-49%) ;
+}
+.header{
+    display:flex;
+    /*position: relative;*/
+    justify-content: space-between;
+}
+.acct-image{
+    display:flex;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border:2px solid rgb(202, 198, 198);
+    margin-top: 0.5rem;
+}
+.acct-image:hover{
+    box-shadow:0 0 0.15em 0.2em rgb(202, 198, 198); 
+}
+.price{
+  /*  display:flex;*/
+    position: relative;
+    left:15rem;
+    font-weight: bold;
+    font-size: 25px;
+}
+.paragraph{
+    color:grey;
+}
+.total{
+    display:flex;
+    justify-content: space-between;
+}
+.final{
+    margin-top: 0.7rem;
+    margin-left: 20%;
+    font-weight:700;
+    font-size: x-large;
+}

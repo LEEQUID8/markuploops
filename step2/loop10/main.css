@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background: #f6f8f9;
+}
+
+#nav {
+    background: #f6f8f9;
+}
+
+footer{
+    /* position: absolute; */
+    /* top: 85%; */
+    /* background: #f6f8f9; */
+}
+
+footer p {
+padding-top: 1rem;
+padding-bottom: 1rem;
+text-align: center;
+}
+
+/* NAV_SECTION */
+#nav {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 1.5rem 7rem 1.5rem 7rem; */
+    padding: 0rem 12rem;
+    border-bottom: 1px solid gray; 
+background: #ffffff;
+}
+
+.logo-img {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 2px;
+    margin-top: 1rem;
+}
+
+.rule {
+    border-right: 0.8px solid #f2f1f2;
+    height: 70px;
+}
+
+
+.search {
+    border-radius: 20px 20px;
+    padding: 0.5rem;
+    margin-left: 2rem;
+    border: 1px solid gray;
+    margin-top: 1rem;
+    width: 70%;
+}
+
+
+.search:focus {
+    outline: none;
+}
+
+.home, .message {
+    margin-top: 1.6rem;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    /* padding-right: 1.5rem; */
+}
+
+
+/* Float Shadow */
+.link {
+    padding-right: 1rem;
+    color: #2b2b30;
+     align-items: center;
+    cursor: pointer;
+    border-radius: 4px;    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  
+  .link:hover{
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    text-decoration: none;
+  }
+  
+
+
+.home a:last-child {
+    color: #fb635a;
+}
+
+
+
+.avatar-img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-top: 0.8rem;
+}
+
+
+/* POSTS  */
+#posts {
+    overflow: hidden;
+    background: #ffffff;
+    padding-left: 12rem;
+  }
+  
+  #posts a {
+    float: left;
+    display: block;
+    /* padding-right: 4rem;  */
+    color: #2b2b30;
+    text-align: center;
+    /* padding: 14px 16px; */
+    padding: 0.8rem 2rem 0.8rem 0.3rem; 
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+  
+  #posts a:hover {
+    border-bottom: 3px solid #82bceb;
+  }
+  
+  #posts a.active {
+    border-bottom: 3px solid #82bceb;
+    text-align: center;
+  }
+
+
+  /* BILL_SECTION */
+  #main {
+    display: flex;
+    margin: 1rem 12rem 1rem 11rem;
+    height: 311vh;
+}
+
+/* bill section */
+.bill-section {
+    background: white;
+    height: 68vh;
+    width: 14vw;
+}
+
+.bill {
+    text-align: center;
+    }
+
+.bill-avatar-img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.bill p:first-of-type {
+   font-size: small;
+   font-weight: 500;
+   color: rgb(97, 97, 97);
+   padding-top: 0.2rem;
+}
+
+.bill p:last-of-type {
+    font-size: smaller;
+    color: rgb(197, 197, 197);
+    padding-top: 0.2rem;
+ }
+
+.bill-button {
+    display: block;
+}
+
+.btn-follow {
+    padding: 0.4rem 1rem;
+    color: white;
+    border-radius: 20px 20px;
+    background: rgb(98, 195, 207);
+    border: none;
+    width: 9rem;
+    margin-top: 0.4rem;
+}
+
+
+.btn-connect {
+    background: none;
+    border: 1px solid rgb(98, 195, 207);
+    color: rgb(98, 195, 207);
+   margin-top: 0.5rem; 
+     padding: 0.4rem 1rem;
+     width: 9rem;
+     border-radius: 20px 20px;
+     margin-bottom: 1rem;
+}
+
+.btn-follow:hover{
+    cursor: pointer;
+    background: rgb(30, 146, 212);
+}
+
+.btn-connect:hover {
+    cursor: pointer;
+    background: rgb(224, 235, 235);
+}
+
+
+a:hover {
+cursor: pointer;
+text-decoration: underline;
+}
+
+.connection-div {
+    display: flex;
+    justify-content: center;
+}
+
+.connect {
+    border-right: 1px solid gray;
+padding-right: 1.2rem;
+}
+
+.followers {
+    padding-left: 1.2rem;
+}
+
+.connect p:first-of-type, .followers p:first-of-type {
+    padding-top: 1rem;
+    font-weight: 800;
+}
+
+.connect p:last-of-type, .followers p:last-of-type {
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+
+.contact {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.contact a {
+    font-size: small;
+    color: rgb(197, 197, 197);
+}
+
+.export {
+padding-top: 1rem;
+padding-bottom: 1rem;
+font-size: small;
+}
+
+.export a {
+    color: rgb(197, 197, 197);
+}
